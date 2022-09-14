@@ -61,9 +61,9 @@ header {
 }
 
 
-.sns ul {
+/* .sns ul {
     
-}
+} */
 
 
 .sns ul li :first-child {
@@ -138,12 +138,13 @@ section {
     width: 100%;
 }
 .menu-inner {
-    width: 100%;
+    max-width: 900px;
+    margin: auto;
 }
 
-.menu-list {
+/* .menu-list {
 
-}
+} */
 
 .menu-list li {
     width: calc(100vw/4);
@@ -172,11 +173,11 @@ section {
 }
 
 .menu-item {
-
+    font-size: 19px;
 }
 
 .menu-price {
-
+    font-size: 17px;
 }
 
 
@@ -188,12 +189,12 @@ section {
 
 
 footer {
-
+    width: 100vw;
 }
 
-.footer-inner {
+/* .footer-inner {
 
-}
+} */
 
 .footer-logo {
     height: 20%;
