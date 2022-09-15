@@ -13,7 +13,7 @@
     <header>
         <div class="header-inner">
             <h1 class="header-logo">
-                <img src="./img/logo.png" alt="logo">
+                <img src="./img/catch.png" alt="logo">
             </h1>
             <nav class="menu_pc">
                 <ul>
@@ -37,10 +37,14 @@
             <div class="sns">
                 <ul>
                     <li>
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </li>
                     <li>
-                        <i class="fa-brands fa-twitter"></i>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +55,7 @@
                 <span id="hb3"></span>
             </div>
 
-            <nav class="menu_sp">
+            <nav class="menu_sp" id="menu_sp">
                 <ul>
                     <li>
                         <a href="">TOP</a>
@@ -69,9 +73,21 @@
                         <a href="">CONTACT</a>
                     </li>
                 </ul>
+                <ul class="sns_sp">
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
             </nav>
 
-            <div class="mordal" id="mordal"></div>
+            <div class="modal" id="modal"></div>
 
         </div>
     </header>
@@ -79,12 +95,25 @@
     <main>
         <div class="mainvisual">
             <img src="./img/main_visual.jpg" alt="mainvisual">
+            <h2 class="catchcopy">
+                <a href="#">
+                    <img src="./img/logo.png" alt="catchcopy">
+                </a>
+            </h2>
         </div>
 
         <section class="about">
             <div class="about-inner">
                 <div class="subtitle">
                     <h2>ABOUT</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="./img/about.jpg" alt="about">
+                    </div>
+                    <div class="about-txt">
+                        <p>理想の自分になるために。<br>新しい自分を見つけるために。<br></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -98,34 +127,43 @@
                     <li class="white">
                         <a href="">
                             <p class="menu-item">CUT</p>
-                            <p class="menu-price">&yen; 3,000</p>
+                            <p class="menu-price">&yen; 3,000 ></p>
                         </a>
                     </li>
                     <li class="pink">
                         <a href="">
                             <p class="menu-item">COLOR</p>
-                            <p class="menu-price">&yen; 4,000</p>
+                            <p class="menu-price">&yen; 4,000 ></p>
+                        </a>
+                    </li>
+                    <li class="white">
+                        <a href="">
+                            <p class="menu-item">PERM</p>
+                            <p class="menu-price">&yen; 3,800 ></p>
                         </a>
                     </li>
                     <li class="pink">
                         <a href="">
-                            <p class="menu-item">PERM</p>
-                            <p class="menu-price">&yen; 3,800</p>
+                            <p class="menu-item">STRAIGHT</p>
+                            <p class="menu-price">&yen; 3,000 ></p>
                         </a>
                     </li>
                     <li class="white">
                         <a href="">
-                            <p class="menu-item">STRAIGHT</p>
-                            <p class="menu-price">&yen; 3,000</p>
+                            <p class="menu-item">SHAMPOO</p>
+                            <p class="menu-price">&yen; 3,200 ></p>
                         </a>
                     </li>
-                    <li class="white">
+                    <li class="pink">
                         <a href="">
                             <p class="menu-item">TREATMENT</p>
-                            <p class="menu-price">&yen; 3,200</p>
+                            <p class="menu-price">&yen; 3,800 ></p>
                         </a>
                     </li>
                 </ul>
+                <div class="see-btn">
+                    <a href="#">SEE MORE ></a>
+                </div>
             </div>
         </section>
 
@@ -134,6 +172,23 @@
                 <div class="subtitle">
                     <h2>GALLARY</h2>
                 </div>
+                <ul class="gallary-list">
+                    <li>
+                        <img src="./img/gallary1.jpg" alt="gallary1">
+                    </li>
+                    <li>
+                        <img src="./img/gallary2.jpg" alt="gallary2">
+                    </li>
+                    <li>
+                        <img src="./img/gallary3.jpg" alt="gallary3">
+                    </li>
+                    <li>
+                        <img src="./img/gallary4.jpg" alt="gallary4">
+                    </li>
+                </ul>
+                <div class="see-btn">
+                    <a href="#">SEE MORE ></a>
+                </div>
             </div>
         </section>
         
@@ -141,21 +196,36 @@
 
     <footer>
         <div class="footer-inner">
-            <h1 class="footer-logo">
-                <img src="./img/logo.png" alt="logo">
-            </h1>
-            <div class="address">
-                <p>&#12306; xxx-xxxx</p>
-                <p>AA県BB市CC x-xx-x</p>
+            <div class="footer1">
+                <h1 class="footer-logo">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <div class="footer-time">
+                    <p>定休日: 日曜日</p>
+                    <p>営業時間: 9:00～21:00&nbsp;<span>(受付20:00まで)</span></p>
+                </div>
+                <div class="footer-contact">
+                    <!-- <i class="fa-solid fa-phone"></i> -->
+                    <p>TEL:&nbsp;XXX-XXXX-XXXX</p>
+                </div>
+                <div class="footer-address">
+                    <p>&#12306; XXX-XXXX</p>
+                    <p>AA県BB市CC X-XX-X</p>
+                </div>
 
             </div>
-            <div class="time">
-                <p>日曜定休日</p>
-            </div>
-            <div class="contact">
-
+            <div class="footer2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853398534!2d139.76493611520053!3d35.68124053757898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1663164883187!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+        <div class="copy">
+            <p>&copy; belle</p>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./hamburger.js"></script>
 </body>
 </html>
