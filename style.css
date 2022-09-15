@@ -51,7 +51,7 @@ header {
 .menu_pc ul li {
     align-items: center;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 4vh;
     width: 100%;
 }
 .menu_pc ul li:last-child {
@@ -86,6 +86,7 @@ header {
 .sns ul li a {
     display: block;
     padding: 0 19.75px;
+    margin-bottom: 0;
 }
 
 .sns ul li a i {
@@ -105,6 +106,9 @@ header {
     margin-bottom: 20px;
     font-size: 20px;
 }
+
+
+
 .hamburger-button {
     display: none;
 }
@@ -117,15 +121,28 @@ header {
     display: none;
 }
 
+
+
 @media screen and (max-width:768px) {
+    header {
+        position: relative;
+
+    }
+    .header-inner_sp {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
 
     .header-logo {
         height: 16vw;
         position: absolute;
-        top: 12vh;
-        left: -3vw;
+        top: 10vh;
+        left: -5vw;
         z-index: 100;
     }
+
     .menu_pc {
         display: none;
     }
@@ -242,7 +259,13 @@ header {
     .sns_sp i {
         font-size: 35px;
     }
+}
 
+@media screen and (max-height:643px) {
+
+    .sns {
+        display: none;
+    }
 }
 
 
@@ -397,6 +420,21 @@ section {
     font-size: 17px;
 }
 
+@media screen and (max-width:900px) {
+    @media screen and (min-width:768px) {
+        
+    .menu-list li a {
+        display: block;
+        padding: 20px 40px;
+    }
+
+    .menu-price {
+        text-align: right;
+    }
+
+    }
+}
+
 .see-btn {
     text-align: right;
     margin-top: 5px;
@@ -437,7 +475,7 @@ section {
 
 
 @media screen and (max-width:768px) {
-    
+
     main, section {
         margin-right: 0;
         padding: 0;
@@ -610,6 +648,7 @@ footer {
 
 .copy p {
     font-size: 11px;
+    color: rgb(166, 166, 166);
 }
 
 @media screen and (max-width:768px) {
