@@ -5,11 +5,12 @@
 .slide-in {
 	overflow: hidden;
     display: inline-block;
+    height: 100%;
 }
 
 .slide-in_inner {
 	display: inline-block;
-
+  height: 100%;
 }
 
 /*左右のアニメーション*/
@@ -66,11 +67,12 @@
 .slide-in2 {
 	overflow: hidden;
     display: inline-block;
+    height: 100%;
 }
 
 .slide-in_inner2 {
 	display: inline-block;
-
+  height: 100%;
 }
 
 /*左右のアニメーション*/
