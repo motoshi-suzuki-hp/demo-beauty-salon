@@ -7,13 +7,19 @@
     <title>beauty</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./gnavi.css">
+    <link rel="stylesheet" href="./zoomin.css">
+    <link rel="stylesheet" href="./fadeUp.css">
+    <link rel="stylesheet" href="./slideIn.css">
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="header-inner">
             <h1 class="header-logo">
-                <img src="./img/catch.png" alt="logo">
+                <span class="slide-in leftAnime">
+                    <span class="slide-in_inner leftAnimeInner">                <img src="./img/catch.png" alt="logo"></span>
+                </span>
             </h1>
             <nav class="menu_pc">
                 <ul>
@@ -97,24 +103,32 @@
 
     <main>
         <div class="mainvisual">
-            <img src="./img/main_visual.jpg" alt="mainvisual">
+            <div><img src="./img/main_visual.jpg" alt="mainvisual"></div>
             <h2 class="catchcopy">
-                <a href="#">
-                    <img src="./img/logo.png" alt="catchcopy">
-                </a>
+                <span class="slide-in2 leftAnime2">
+                    <span class="slide-in_inner2 leftAnimeInner2">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="catchcopy">
+                        </a>
+                    </span>
+                </span>
             </h2>
         </div>
 
         <section class="about">
             <div class="about-inner">
                 <div class="subtitle">
-                    <h2>ABOUT</h2>
+                    <h2>
+                        <span class="slide-in leftAnime">
+                            <span class="slide-in_inner leftAnimeInner">ABOUT</span>
+                        </span>
+                    </h2>
                 </div>
                 <div class="about-content">
-                    <div class="about-img">
+                    <div class="about-img fadeUpTrigger10">
                         <img src="./img/about.jpg" alt="about">
                     </div>
-                    <div class="about-txt">
+                    <div class="about-txt fadeUpTrigger20">
                         <p>理想の自分になるために。<br>新しい自分を見つけるために。<br></p>
                     </div>
                 </div>
@@ -124,43 +138,59 @@
         <section class="menu" id="menu">
             <div class="menu-inner">
                 <div class="subtitle">
-                    <h2>MENU</h2>
+                    <h2>
+                        <span class="slide-in leftAnime">
+                            <span class="slide-in_inner leftAnimeInner">MENU</span>
+                        </span>
+                    </h2>
                 </div>
-                <ul class="menu-list">
-                    <li class="white">
+                <ul class="menu-list gnavi">
+                    <li class="white fadeUpTrigger10">
                         <a href="">
-                            <p class="menu-item">CUT</p>
-                            <p class="menu-price">&yen; 3,000 ></p>
+                            <span>
+                                <p class="menu-item">CUT</p>
+                                <p class="menu-price">&yen; 3,000 ></p>
+                            </span>
                         </a>
                     </li>
-                    <li class="pink">
+                    <li class="pink fadeUpTrigger15">
                         <a href="">
-                            <p class="menu-item">COLOR</p>
-                            <p class="menu-price">&yen; 4,000 ></p>
+                            <span>
+                                <p class="menu-item">COLOR</p>
+                                <p class="menu-price">&yen; 4,000 ></p>
+                            </span>
                         </a>
                     </li>
-                    <li class="white">
+                    <li class="white fadeUpTrigger20">
                         <a href="">
-                            <p class="menu-item">PERM</p>
-                            <p class="menu-price">&yen; 3,800 ></p>
+                            <span>
+                                <p class="menu-item">PERM</p>
+                                <p class="menu-price">&yen; 3,800 ></p>
+                            </span>
                         </a>
                     </li>
-                    <li class="pink">
+                    <li class="pink fadeUpTrigger10">
                         <a href="">
-                            <p class="menu-item">STRAIGHT</p>
-                            <p class="menu-price">&yen; 3,000 ></p>
+                            <span>
+                                <p class="menu-item">STRAIGHT</p>
+                                <p class="menu-price">&yen; 3,000 ></p>
+                            </span>
                         </a>
                     </li>
-                    <li class="white">
+                    <li class="white fadeUpTrigger15">
                         <a href="">
-                            <p class="menu-item">SHAMPOO</p>
-                            <p class="menu-price">&yen; 3,200 ></p>
+                            <span>
+                                <p class="menu-item">SHAMPOO</p>
+                                <p class="menu-price">&yen; 3,200 ></p>
+                            </span>
                         </a>
                     </li>
-                    <li class="pink">
+                    <li class="pink fadeUpTrigger20">
                         <a href="">
-                            <p class="menu-item">TREATMENT</p>
-                            <p class="menu-price">&yen; 3,800 ></p>
+                            <span>
+                                <p class="menu-item">TREATMENT</p>
+                                <p class="menu-price">&yen; 3,800 ></p>
+                            </span>
                         </a>
                     </li>
                 </ul>
@@ -173,20 +203,24 @@
         <section class="gallary">
             <div class="gallary-inner">
                 <div class="subtitle">
-                    <h2>GALLARY</h2>
+                    <h2>
+                        <span class="slide-in leftAnime">
+                            <span class="slide-in_inner leftAnimeInner">GALLARY</span>
+                        </span>
+                    </h2>
                 </div>
                 <ul class="gallary-list">
-                    <li>
-                        <img src="./img/gallary1.jpg" alt="gallary1">
+                    <li class="zoomIn fadeUpTrigger10">
+                        <a href=""><span class="mask"><img src="./img/gallary1.jpg" alt="gallary1"></span></a>
                     </li>
-                    <li>
-                        <img src="./img/gallary2.jpg" alt="gallary2">
+                    <li class="zoomIn fadeUpTrigger10">
+                        <a href=""><span class="mask"><img src="./img/gallary2.jpg" alt="gallary2"></span></a>
                     </li>
-                    <li>
-                        <img src="./img/gallary3.jpg" alt="gallary3">
+                    <li class="zoomIn fadeUpTrigger10">
+                        <a href=""><span class="mask"><img src="./img/gallary3.jpg" alt="gallary3"></span></a>
                     </li>
-                    <li>
-                        <img src="./img/gallary4.jpg" alt="gallary4">
+                    <li class="zoomIn fadeUpTrigger10">
+                        <a href=""><span class="mask"><img src="./img/gallary4.jpg" alt="gallary4"></span></a>
                     </li>
                 </ul>
                 <div class="see-btn">
@@ -230,5 +264,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./hamburger.js"></script>
+    <script type="text/javascript" src="./fadeUp.js"></script>
+    <script type="text/javascript" src="./slideIn.js"></script>
 </body>
 </html>

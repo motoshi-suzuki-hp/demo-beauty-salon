@@ -377,8 +377,6 @@ section {
 }
 
 .menu-list {
-    /* display: flex;
-    flex-flow: row wrap; */
     width: 100%;
  column-count: 2;
 
@@ -391,9 +389,11 @@ section {
     justify-content: space-between;
     border-bottom: solid 1px rgb(180, 180, 180);
 }
-/* .menu-list li:nth-child(4) {
-    margin-top: 10px;
-} */
+
+.menu-list li:hover {
+
+}
+
 
 .white {
     background-color: white;
@@ -407,8 +407,12 @@ section {
 
 
 .menu-list li a {
-    display: flex;
+    display: block;
     padding: 20px 40px;
+}
+.menu-list li a span {
+    display: flex;
+
     justify-content: space-between;
 }
 
@@ -469,8 +473,18 @@ section {
     width: 20%;
 }
 
+.gallary-list li a {
+    display: block;
+    height: 100%;
+}
+
+.gallary-list li a span {
+    height: 100%;
+}
+
 .gallary-list li img {
-    
+    display: block;
+    height: 100%;
 }
 
 
