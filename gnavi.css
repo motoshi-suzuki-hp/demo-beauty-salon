@@ -91,3 +91,14 @@
 .gnavi li:hover span::after{
   transition-delay: 0.2s;/*線の出現を0.2秒遅らせる*/
 }
+
+
+
+  @media screen and (max-width:768px) {
+
+      .gnavi li {
+          margin: 10px 0;
+      }
+
+
+  }

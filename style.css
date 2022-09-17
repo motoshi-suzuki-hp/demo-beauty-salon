@@ -4,6 +4,7 @@ html, body {
     font-size: 14px;
     font-family: 'Noto Serif JP', serif;
     background-color: white;
+    z-index: -1;
 }
 
 
@@ -27,7 +28,7 @@ header {
     position: absolute;
     top: 20vw;
     left: -3vw;
-    z-index: 100;
+    z-index: 2;
 }
 
 .header-logo img {
@@ -42,7 +43,7 @@ header {
     right: 0px;
     font-size: 17px;
     width: 65px;
-    z-index: 10000;
+    z-index: 3;
 }
 
 .menu_pc ul {
@@ -72,7 +73,7 @@ header {
     right: 0px;
     font-size: 17px;
     width: 65px;
-    z-index: 10000;
+    z-index: 3;
 }
 
 .sns ul {
@@ -123,6 +124,8 @@ header {
 
 .mordal {
     display: none;
+
+    z-index: 10;
 }
 
 
@@ -130,6 +133,7 @@ header {
 @media screen and (max-width:768px) {
     header {
         position: relative;
+        z-index: 20;
 
     }
     .header-inner_sp {
@@ -144,7 +148,10 @@ header {
         position: absolute;
         top: 10vh;
         left: -5vw;
-        z-index: 100;
+        z-index: -1;
+    }
+    .header-logo img {
+        z-index: 2;
     }
 
     .menu_pc {
@@ -163,7 +170,7 @@ header {
         width: 50px;
         height:50px;
         border-radius: 5px;
-        z-index: 10003;
+        z-index: 102;
 
         margin-right: 0;
     }
@@ -226,7 +233,7 @@ header {
         width: 100%;
         height: 100vh;
         padding: 20px 0;
-        z-index: 10001;
+        z-index: 101;
     }
     
     .add-menu_sp li {
@@ -246,8 +253,8 @@ header {
         width: 100%;
         height: 100vh;
         display: block;
-        background-color: #000000aa;
-        z-index: 10000;
+        background-color: #FFF4FF;
+        z-index: 100;
     }
 
     .mordal {
@@ -258,6 +265,7 @@ header {
         display: flex;
         font-size: 40px;
         margin: auto 70px;
+        z-index: 101;
     }
 
     .sns_sp i {
@@ -309,10 +317,45 @@ main, section {
 }
 
 section {
+    display: block;
     padding: 50px 100px 100px;
     width: 100%;
 
 
+}
+
+.about {
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.menu {
+    padding-top: 75px;
+
+    padding-bottom: 75px;
+}
+
+.gallary {
+    padding-top: 75px;
+    padding-bottom: 125px;
+}
+
+@media screen and (max-width:768px) {
+    .about {
+        margin-top: 50px;
+        padding-bottom: 25px;
+    }
+    
+    .menu {
+        padding-top: 25px;
+    
+        padding-bottom: 50px;
+    }
+    
+    .gallary {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
 }
 
 /*背景*/
@@ -329,7 +372,7 @@ section {
     height: 1px;
     
     background: rgb(166, 166, 166);
-    transform: rotate(-6deg);
+    transform: rotate(-4deg);
 
     /*ここで三角形のサイズを決める。
     必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
@@ -348,7 +391,7 @@ section {
     height: 1px;
     
     background: rgb(166, 166, 166);
-    transform: rotate(6deg);
+    transform: rotate(4deg);
 
     /*ここで三角形のサイズを決める。
     必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
@@ -410,11 +453,11 @@ section {
     padding: 20px;
     position: absolute;
     width: 30vw;
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.7); */
     margin-top: -100px;
     margin-left: 50vw;
     border-radius: 50px;
-    z-index: 100;
+    z-index: 2;
 }
 
 .about-txt p {
@@ -424,7 +467,7 @@ section {
 
 .menu-list {
     width: 100%;
- column-count: 2;
+    column-count: 2;
 
     justify-content: space-between;
 }
@@ -454,7 +497,7 @@ section {
 
 .menu-list li a {
     display: block;
-    padding: 20px 40px;
+    padding: 20px 30px;
 }
 .menu-list li a span {
     display: flex;
@@ -472,15 +515,17 @@ section {
 
 @media screen and (max-width:900px) {
     @media screen and (min-width:768px) {
-        
-    .menu-list li a {
-        display: block;
-        padding: 20px 40px;
-    }
 
-    .menu-price {
-        text-align: right;
-    }
+
+        
+        .menu-list li a span {
+            display: block;
+            padding: 20px 40px;
+        }
+
+        .menu-price {
+            text-align: right;
+        }
 
     }
 }
@@ -535,6 +580,10 @@ section {
 
 
 @media screen and (max-width:768px) {
+    .catchcopy {
+        height: 18vw;
+
+    }
 
     main, section {
         margin-right: 0;
@@ -564,7 +613,7 @@ section {
         margin-left: 0;
         margin-top: 0;
         border-radius: 50px;
-        z-index: 100;
+        z-index: 2;
     }
 
 
@@ -630,7 +679,7 @@ section {
     transform: translateY(-100%);
     
     /*ここで三角形のサイズを決める。必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
-    border-width:  0  0 40px  100vw ;
+    border-width:  0  0 70px  100vw ;
    
     /*transparentで余分な線を消す*/
     border-color: transparent   transparent  #FFF4FF transparent ;
