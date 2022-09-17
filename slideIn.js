@@ -1,7 +1,7 @@
 function slideAnime(){
 	//====左に動くアニメーションここから===
 		$('.leftAnime').each(function(){ 
-			var elemPos = $(this).offset().top-50;
+			var elemPos = $(this).offset().top+50;
 			var scroll = $(window).scrollTop();
 			var windowHeight = $(window).height();
 			if (scroll >= elemPos - windowHeight){
@@ -34,7 +34,7 @@ function slideAnime(){
 function slideAnime2(){
     //====左に動くアニメーションここから===
         $('.leftAnime2').each(function(){ 
-            var elemPos = $(this).offset().top-50;
+            var elemPos = $(this).offset().top+50;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
             if (scroll >= elemPos - windowHeight){
