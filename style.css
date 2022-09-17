@@ -11,6 +11,8 @@ body {
     padding-right: 60px;
 }
 
+
+
 header {
     padding-left: 45px;
     background-color: transparent;
@@ -40,6 +42,7 @@ header {
     right: 0px;
     font-size: 17px;
     width: 65px;
+    z-index: 10000;
 }
 
 .menu_pc ul {
@@ -69,6 +72,7 @@ header {
     right: 0px;
     font-size: 17px;
     width: 65px;
+    z-index: 10000;
 }
 
 .sns ul {
@@ -305,13 +309,55 @@ main, section {
 }
 
 section {
-    padding: 50px 100px;
+    padding: 50px 100px 100px;
     width: 100%;
 
-    margin-bottom: 100px;
-    margin-top: 50px;
+
 }
 
+/*背景*/
+
+.Block1 {
+    position: relative;
+}
+.Block1::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    
+    background: rgb(166, 166, 166);
+    transform: rotate(-6deg);
+
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    /* border-width: 40px 0 0 100vw ;
+
+    border-color: transparent  transparent  transparent #000000; */
+}
+
+
+.Block1::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    
+    background: rgb(166, 166, 166);
+    transform: rotate(6deg);
+
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    /* border-width: 40px 0 0 100vw ;
+
+    border-color: transparent  transparent  transparent #000000; */
+}
+
+/*背景*/
 
 
 .subtitle {
@@ -570,7 +616,25 @@ section {
 
 }
 
-
+.Block2 {
+    position: relative;
+}
+.Block2::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: translateY(-100%);
+    
+    /*ここで三角形のサイズを決める。必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width:  0  0 40px  100vw ;
+   
+    /*transparentで余分な線を消す*/
+    border-color: transparent   transparent  #FFF4FF transparent ;
+}
 
 footer {
     width: 100vw;
